@@ -1,0 +1,25 @@
+method: 'DGMw'
+dataset: 'mnist'
+log_dir: './logs/DGMw/mnist/'
+dataroot: 'dat/split_mnist_'
+outf: 'outputs/DGMw'
+outf_models: 'outputs/DGMw/models'
+batchSize: 64
+imageSize: 32
+manualSeed: 0
+nz: 128 # size of the latent z vector
+ngf: 6
+ndf: 32
+niter: 101
+lr_D: 0.002
+lr_G: 0.002
+beta1: 0.5
+cuda: True
+device: 0
+smax_g: !!float 1e4 #1e5
+lamb_G: 0.08 #1.
+lambda_adv: 1.
+lambda_wasserstein: 1.
+reinit_D : True
+store_models: False
+aux_G: False #True

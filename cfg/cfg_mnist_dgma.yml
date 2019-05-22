@@ -1,0 +1,25 @@
+method: 'DGMa'
+dataset: 'mnist'
+log_dir: './logs/DGMa/mnist/'
+dataroot: 'dat/split_mnist_'
+outf: 'outputs/DGMa_mnist'
+outf_models: 'outputs/DGMa_mnist/models'
+batchSize: 64
+imageSize: 32
+manualSeed: 0
+nz: 128 # size of the latent z vector
+ngf: 20
+ndf: 32
+niter: 101
+lr_D: 0.002
+lr_G: 0.002
+beta1: 0.5
+cuda: True
+device: 1
+smax_g: !!float 1e5 #800
+lamb_G: 0.01
+lambda_adv: 1.
+lambda_wasserstein: 1.
+reinit_D : True
+store_models: False
+aux_G: False
