@@ -22,7 +22,7 @@ ts = time.time()
 # Arguments
 parser=argparse.ArgumentParser(description='xxx')
 parser.add_argument('--dataset',default='mnist',type=str,required=False, choices=['mnist','svhn'],help='Dataset name')
-parser.add_argument('--method',default='DGMa',type=str,required=False, choices=['DGMa','DGMw'], help='Method to run.')
+parser.add_argument('--method',default='DGMw',type=str,required=False, choices=['DGMa','DGMw'], help='Method to run.')
 #parser.add_argument('--cfg_file',default=None,type=str,required=False, help='Path to the configuration file')
 cfg=parser.parse_args()
 if cfg.method =="DGMw":
