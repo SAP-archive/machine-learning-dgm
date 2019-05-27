@@ -206,7 +206,7 @@ class App(object):
         try:
             for epoch in range(self.niter):
                 #random mix
-                for t_past in range(t):
+                for t_past in range(t):      
                     idxx = np.random.permutation(data_past[t_past]["train"]["y"].shape[0])
                     data_past[t_past]["train"]["x"] = data_past[t_past]["train"]["x"][idxx]
                     data_past[t_past]["train"]["y"] = data_past[t_past]["train"]["y"][idxx]
