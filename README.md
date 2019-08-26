@@ -1,4 +1,4 @@
-# Learning to Remember: A Synaptic Plasticity Driven Framework for Continual Learning
+# Learning to Remember: A Synaptic Plasticity Driven Framework for Continual Learning 
 ## Description: 
 A continual learning framework for class incremental learning described in the following paper [arXiv](https://arxiv.org/abs/1904.03137).
 Note, this is work in progress and this code that will be dynamically updated.
